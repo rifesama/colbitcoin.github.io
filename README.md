@@ -1,6 +1,6 @@
 # ColBitcoin.com
 🌎 colbitcoin.com
-ColBitcoin es una iniciativa educativa dedicada a promover el conocimiento y uso responsable de Bitcoin y la Lightning Network en Colombia y América Latina.
+ es una iniciativa educativa dedicada a promover el conocimiento y uso responsable de Bitcoin y la Lightning Network en Colombia y América Latina.
 
 Nuestro objetivo es empoderar a estudiantes, emprendedores y comunidades con herramientas prácticas para comprender cómo funciona Bitcoin, cómo utilizarlo de forma segura y cómo aprovechar su tecnología para construir libertad financiera y descentralización.
 
