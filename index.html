@@ -4,57 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO básico -->
+    <title>ColBitcoin | Asesoría personalizada en Bitcoin para colombianos</title>
+    <meta name="description" content="Aprende Bitcoin desde cero con asesoría personalizada 1 a 1. Compra, guarda y gestiona tus sats de forma segura. 100% virtual, +80 clientes asesorados en Colombia." />
+    <meta name="keywords" content="bitcoin colombia, aprender bitcoin, asesoría bitcoin, comprar bitcoin colombia, lightning network, satoshis, educación bitcoin" />
+    <meta name="author" content="ColBitcoin" />
+    <link rel="canonical" href="https://colbitcoin.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://colbitcoin.com" />
-    <meta property="og:title" content="Mentorias y asesorias personalizadas sobre Bitcoin y Lightning" />
+    <meta property="og:title" content="ColBitcoin | Asesoría personalizada en Bitcoin para colombianos" />
+    <meta property="og:description" content="Aprende Bitcoin desde cero con asesoría 1 a 1. Compra, guarda y gestiona tus sats de forma segura y sin caer en estafas." />
     <meta property="og:image" content="https://colbitcoin.com/img/logo.png" />
-    <meta property="og:description" content="La eduacion es la clave para entender bitcoin" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@colbitcoin">
-    <meta name="twitter:creator" content="@colbitcoin">
-    <meta name="twitter:title" content="Enseñar sobre Bitcoin y Lightning es nuestro compromiso" />
-    <meta name="twitter:description" content="Formacion personalizada sobre Bitcoin y Lightning" />
-    <meta name="twitter:image" content="https://colbitcoin/img/logo.png" />
+    <meta property="og:locale" content="es_CO" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ColBitcoin" />
+    <meta name="twitter:creator" content="@ColBitcoin" />
+    <meta name="twitter:title" content="ColBitcoin | Asesoría personalizada en Bitcoin para colombianos" />
+    <meta name="twitter:description" content="Aprende Bitcoin desde cero con asesoría 1 a 1. Compra, guarda y gestiona tus sats de forma segura y sin caer en estafas." />
+    <meta name="twitter:image" content="https://colbitcoin.com/img/logo.png" />
+
+    <!-- Datos estructurados (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "ColBitcoin",
+      "url": "https://colbitcoin.com",
+      "logo": "https://colbitcoin.com/img/logo.png",
+      "description": "Asesoría personalizada en Bitcoin para colombianos. Aprende a comprar, guardar y gestionar Bitcoin de forma segura.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CO"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "Spanish"
+      },
+      "sameAs": [
+        "https://x.com/ColBitcoin",
+        "https://t.me/ColBitcoin",
+        "https://www.youtube.com/@colbitcoin"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./img/favicon.ico" type="image/ico">
     <script src="https://kit.fontawesome.com/38c07037bc.js" crossorigin="anonymous"></script>
-    <title>@colbitcoin</title>
+    <title>ColBitcoin | Asesoría personalizada en Bitcoin para colombianos</title>
 </head>
 <body>
+    <div class="btc-topbar">
+      <div class="btc-price-badge">
+        <i class="fa-brands fa-bitcoin"></i>
+        <span id="btc-price">...</span>
+        <span class="btc-divider">|</span>
+        <span id="btc-price-cop">...</span> 🇨🇴
+      </div>
+    </div>
     <div class="container">
         <header class="header">
           <div class="logo">
             <img src="./img/logo.png" alt="" class="logo">
           </div>
 
-          <nav class="nav">
+          <nav class="nav" id="main-nav">
             <ul class='nav_menu'>
               <li class='nav_item'><a target="_blank" href="https://blog.colbitcoin.com" class="nav_link">BLOG</a></li>
-              <li class='nav_item'><a target="_blank" href="https://t.me/ColombiaP2P" class="nav_link">Comunidad</a></li>
-              <li class='nav_item'><a target="_blank" href="https://t.me/ColBitcoin" class="nav_link">telegram</a></li>
+              <li class='nav_item'><a target="_blank" href="https://t.me/ColombiaP2P" class="nav_link">COMUNIDAD</a></li>
+              <li class='nav_item'><a target="_blank" href="https://t.me/ColBitcoin" class="nav_link">TELEGRAM</a></li>
               <li class='nav_item'><a target="_blank" href="https://www.youtube.com/@colbitcoin" class="nav_link">YOUTUBE</a></li>
             </ul>
           </nav>
 
-          <a href="https://x.com/ColBitcoin" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-twitter icon-menu"></i>
-          </a>
-
           <div class="lang_box">
-            <a class="lang_link" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+quiero+saber+mas+sobre+las+asesorias&type=phone_number&app_absent=0">
-              whatsapp 📞
+            <a class="whatsapp-btn" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+quiero+saber+mas+sobre+las+asesorias&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
             </a>
           </div>
+
+          <button class="hamburger" id="hamburger" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </header>
 
 
         <main>
             <div class="hero">
                 <div class="hero_left">
-                    <h1>MENTORIAS </h1>
-                    <h2>PERSONALIZADAS</h2>
-                    <p class="hero_p">¡Aprende sobre Bitcoin y Lightning Network desde cero!</p>
-                    <a href="https://t.me/ColBitcoin" class="hero_button" target="_blank" rel="noopener noreferrer">CONTACTANOS <i class="fa-solid fa-paper-plane icon-button"></i></a>
+                    <h1>Asesoría personalizada</h1>
+                    <h2>en Bitcoin</h2>
+                    <p class="hero_p">Entiende Bitcoin y toma decisiones con confianza</p>
+                    <p class="hero_tagline">Te guío paso a paso en el mundo de Bitcoin: cómo comprar, guardar y hacer crecer tus activos de forma segura y sin caer en estafas.</p>
                 </div>
 
                 <div class="hero_right">
@@ -63,7 +115,57 @@
                 </div>
             </div>
 
-            <div class="box-container">
+            <div class="hero-banner fade-up">
+              <div class="hero-banner-btns">
+                <a class="whatsapp-btn" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+quiero+saber+mas+sobre+las+asesorias&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-whatsapp"></i> Escríbeme ahora
+                </a>
+                <a href="#servicios" class="outline-btn">Ver servicios</a>
+              </div>
+              <div class="hero-banner-stats">
+                <div class="stat-card">
+                  <span class="stat-number">+200</span>
+                  <span class="stat-label">Clientes asesorados</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Virtual y flexible</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-number">0</span>
+                  <span class="stat-label">Estafas entre mis clientes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-section fade-up">
+              <p class="how-label">CALCULADORA</p>
+              <h2 class="how-title">¿Cuántos satoshis tienes?</h2>
+              <p class="calc-subtitle">Ingresa un monto y descubre cuántos sats equivalen hoy.</p>
+              <div class="calc-card">
+                <div class="calc-inputs">
+                  <div class="calc-field">
+                    <label>Monto en COP 🇨🇴</label>
+                    <input type="number" id="calc-cop" placeholder="Ej: 50000" min="0">
+                  </div>
+                  <div class="calc-arrow"><i class="fa-solid fa-right-left"></i></div>
+                  <div class="calc-field">
+                    <label>Monto en USD 🇺🇸</label>
+                    <input type="number" id="calc-usd" placeholder="Ej: 10" min="0">
+                  </div>
+                </div>
+                <div class="calc-result">
+                  <i class="fa-brands fa-bitcoin calc-result-icon"></i>
+                  <div>
+                    <span class="calc-sats" id="calc-sats">0</span>
+                    <span class="calc-sats-label">satoshis</span>
+                  </div>
+                </div>
+                <p class="calc-note">1 BTC = 100,000,000 satoshis · Precio actualizado en tiempo real</p>
+              </div>
+            </div>
+
+            <div class="box-container fade-up">
               <a href="https://blog.colbitcoin.com" class="box">
                 <img src="./img/sombrero.png" alt="">
                 <h3>¿Cómo funciona?</h3>
@@ -74,53 +176,414 @@
               </a>
             </div>
 
-            <div class="questions">
-              <h2>NUESTROS SERVICIOS</h2>
-              <div class="questions-container">
-                <div class="questions-box">
-                  <div class="circle circle1"></div>
-                  <span class="questions-text">
-                    Asesorias y mentorias personalizadas 1 a 1 (instructor y alumno).
-                  </span>
+            <div class="how-it-works fade-up">
+              <p class="how-label">CÓMO FUNCIONA</p>
+              <h2 class="how-title">Tu camino en Bitcoin</h2>
+              <div class="how-steps">
+                <div class="how-step">
+                  <div class="how-number">1</div>
+                  <div class="how-text">
+                    <strong>Escríbeme por WhatsApp</strong>
+                    <span>Hablamos 20 minutos para entender tu nivel y tus objetivos con Bitcoin.</span>
+                  </div>
                 </div>
-                <div class="questions-box">
-                  <div class="circle circle2"></div>
-                  <span class="questions-text">
-                    Dos cursos personalizados 1.Básico (Bitcoin) 2.Intermedio (Lightning).
-                  </span>
+                <div class="how-step">
+                  <div class="how-number">2</div>
+                  <div class="how-text">
+                    <strong>Recibe tu plan personalizado</strong>
+                    <span>Diseño una hoja de ruta específica para ti: qué aprender, qué hacer y en qué orden.</span>
+                  </div>
                 </div>
-                <div class="questions-box">
-                  <div class="circle circle3"></div>
-                  <span class="questions-text">
-                    Protegemos tu privacidad, <strong>ColBitcoin</strong> nunca te pedirá datos personales.
-                  </span>
+                <div class="how-step">
+                  <div class="how-number">3</div>
+                  <div class="how-text">
+                    <strong>Sesiones de asesoría</strong>
+                    <span>Trabajamos juntos por videollamada a tu ritmo, con ejercicios prácticos incluidos.</span>
+                  </div>
                 </div>
-                <div class="questions-box">
-                  <div class="circle circle4"></div>
-                  <span class="questions-text">
-                    Charlas en colegios, universidades, empresas, eventos nacionales e internacionales. 
-                  </span>
+                <div class="how-step">
+                  <div class="how-number">4</div>
+                  <div class="how-text">
+                    <strong>Aplicas con seguridad</strong>
+                    <span>Compras, guardas y gestionas tus Bitcoin con criterio propio. Sin depender de nadie.</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="human-container">
-              <img src="./img/angle.png" alt="" class="angle">
-              <div class="human-box">
-                <img src="./img/Human.png" alt="" class="human-img">
-                <a href="https://cal.com/colbitcoin" class="hero_button" target="_blank" rel="noopener noreferrer">¡RESERVA UNA MENTORIA! <i class="fa-solid fa-paper-plane icon-button"></i></a>
-                </div>
+            <div class="quiz-section fade-up">
+              <p class="how-label">QUIZ</p>
+              <h2 class="how-title">¿Qué tanto sabes de Bitcoin?</h2>
+              <p class="calc-subtitle">5 preguntas rápidas para medir tu nivel.</p>
+
+              <div class="quiz-card" id="quiz-card">
+                <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress"></div></div>
+                <p class="quiz-counter" id="quiz-counter">Pregunta 1 de 5</p>
+                <p class="quiz-question" id="quiz-question"></p>
+                <div class="quiz-options" id="quiz-options"></div>
+              </div>
+
+              <div class="quiz-result fade-up" id="quiz-result" style="display:none;">
+                <div class="quiz-result-score" id="quiz-result-score"></div>
+                <p class="quiz-result-text" id="quiz-result-text"></p>
+                <a class="whatsapp-btn" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+hice+el+quiz+y+quiero+mejorar+mi+nivel+en+Bitcoin&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-whatsapp"></i> Agenda una sesión gratuita
+                </a>
+                <button class="quiz-retry" id="quiz-retry">Intentar de nuevo</button>
               </div>
             </div>
+
+            <div class="services fade-up" id="servicios">
+              <p class="how-label">MIS SERVICIOS</p>
+              <h2 class="how-title">¿Qué aprenderás conmigo?</h2>
+              <p class="services-subtitle">Sesiones 100% personalizadas según tu nivel. Desde cero hasta estrategias avanzadas.</p>
+
+              <div class="services-grid">
+                <div class="service-card">
+                  <div class="service-icon"><i class="fa-regular fa-circle-question"></i></div>
+                  <h3>Bitcoin desde cero</h3>
+                  <p>Qué es, cómo funciona la blockchain y cómo empezar sin cometer errores costosos.</p>
+                </div>
+                <div class="service-card">
+                  <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
+                  <h3>Custodia y seguridad</h3>
+                  <p>Wallets frías y calientes, seed phrases, exchanges seguros: protege tus BTC.</p>
+                </div>
+                <div class="service-card">
+                  <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                  <h3>Estrategia de compra</h3>
+                  <p>Dollar Cost Averaging, cuándo comprar y cómo asignar un % de tus ahorros.</p>
+                </div>
+                <div class="service-card">
+                  <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                  <h3>Cómo evitar estafas</h3>
+                  <p>Identifico contigo Ponzi, rug pulls, phishing y promesas de rentabilidad irreal.</p>
+                </div>
+                <div class="service-card">
+                  <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                  <h3>Nodos Bitcoin</h3>
+                  <p>Aprende a montar y administrar tu propio nodo Bitcoin para tener soberanía financiera y verificar tus propias transacciones.</p>
+                </div>
+                <div class="service-card">
+                  <div class="service-icon"><i class="fa-solid fa-store"></i></div>
+                  <h3>Comercios P2P</h3>
+                  <p>Implementa pagos en Bitcoin y Lightning Network en tu negocio. Acepta sats, reduce comisiones y llega a clientes globales.</p>
+                </div>
+              </div>
+
+              <div class="services-cta">
+                <div>
+                  <strong>¿Tienes dudas sobre qué servicio necesitas?</strong>
+                  <span>Escríbeme por WhatsApp y te oriento sin costo</span>
+                </div>
+                <a class="whatsapp-btn" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+quiero+saber+mas+sobre+las+asesorias&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-whatsapp"></i> Preguntar
+                </a>
+              </div>
+            </div>
+
+            <div class="pricing fade-up">
+              <p class="how-label">PLANES Y PRECIOS</p>
+              <h2 class="how-title">Invierte en tu conocimiento</h2>
+              <div class="pricing-grid">
+
+                <div class="pricing-card">
+                  <p class="pricing-plan-name">SESIÓN ÚNICA</p>
+                  <div class="pricing-price">
+                    <span class="pricing-amount">$90.000</span>
+                    <span class="pricing-currency">COP</span>
+                  </div>
+                  <ul class="pricing-features">
+                    <li>Sesión de 60 min</li>
+                    <li>Diagnóstico de tu situación</li>
+                    <li>Guía de recursos personalizados</li>
+                    <li>Resumen escrito post-sesión</li>
+                  </ul>
+                </div>
+
+                <div class="pricing-card pricing-card--popular">
+                  <span class="pricing-badge">Más popular</span>
+                  <p class="pricing-plan-name">PLAN BITCOIN COMPLETO</p>
+                  <div class="pricing-price">
+                    <span class="pricing-amount">$280.000</span>
+                    <span class="pricing-currency">COP / mes</span>
+                  </div>
+                  <ul class="pricing-features">
+                    <li>4 sesiones al mes</li>
+                    <li>Soporte por WhatsApp</li>
+                    <li>Revisión de tu wallet y exchanges</li>
+                    <li>Estrategia de compra personalizada</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="testimonials fade-up">
+              <p class="how-label">TESTIMONIOS</p>
+              <h2 class="how-title">Clientes que ya le entraron al Bitcoin</h2>
+              <div class="testimonials-list">
+
+                <div class="testimonial-card">
+                  <p class="testimonial-quote">"Llevaba meses queriendo comprar Bitcoin pero le tenía miedo a las estafas. Después de dos sesiones ya tenía mi propia wallet y mi primera compra hecha."</p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-avatar">CR</div>
+                    <div>
+                      <strong>Carlos Rojas</strong>
+                      <span>Contador, Bogotá</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-card">
+                  <p class="testimonial-quote">"Me enseñó la diferencia entre una wallet fría y una caliente. Eso solo ya valió todo el dinero de la asesoría."</p>
+                  <div class="testimonial-author">
+                    <div class="testimonial-avatar">SM</div>
+                    <div>
+                      <strong>Sara Mendoza</strong>
+                      <span>Diseñadora, Cali</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="faq fade-up">
+              <p class="how-label">PREGUNTAS FRECUENTES</p>
+              <h2 class="how-title">Dudas comunes</h2>
+              <div class="faq-list">
+
+                <div class="faq-item">
+                  <strong>¿Necesito saber de tecnología para empezar?</strong>
+                  <p>Para nada. Mis sesiones están diseñadas para cualquier nivel, incluyendo personas que nunca han comprado Bitcoin.</p>
+                </div>
+
+                <div class="faq-item">
+                  <strong>¿Me recomiendas en qué exchange comprar?</strong>
+                  <p>Sí, analizo las opciones disponibles en Colombia y te recomiendo las más seguras y con menores comisiones.</p>
+                </div>
+
+                <div class="faq-item">
+                  <strong>¿Me garantizas rentabilidad?</strong>
+                  <p>No. Nadie puede garantizar rentabilidad en Bitcoin. Lo que sí te garantizo es que tomarás decisiones informadas y evitarás errores costosos.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="free-sats fade-up">
+              <p class="how-label">BITCOIN GRATIS</p>
+              <h2 class="how-title">Reclama tus primeros satoshis</h2>
+
+              <div class="free-sats-info">
+                Recibirás un cupón de 21 Satoshi, tu capital inicial. Al hacer clic en el botón, serás redirigido a un bot de Telegram. El bot te mostrará el cupón como un código QR o como una cadena LNURL. Por supuesto, necesitas tener Telegram instalado.
+              </div>
+
+              <h3 class="free-sats-cta-title">¿Listo? Aquí está el botón:</h3>
+
+              <a href="https://t.me/fresatsBot" target="_blank" rel="noopener noreferrer" class="free-sats-btn">
+                Reclama 21 Sats ⚡️
+              </a>
+            </div>
+
+            <div class="cta-final fade-up">
+              <i class="fa-brands fa-bitcoin cta-final-icon"></i>
+              <h2 class="cta-final-title">Tu primera sesión es gratuita</h2>
+              <p class="cta-final-subtitle">Escríbeme por WhatsApp, hablamos 20 minutos sin costo y te cuento cómo puedo ayudarte.</p>
+              <a class="whatsapp-btn" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+quiero+saber+mas+sobre+las+asesorias&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp
+              </a>
+            </div>
         </main>
+
+        <a class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=573163904412&text=Hola+quiero+saber+mas+sobre+las+asesorias&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Escríbeme
+        </a>
 
 
       </div>
       <footer class="footer">
         <div class="footer-container">
           © 2017 @ColBitcoin. Todos los derechos reservados.
-          <a href="./disclaimer.html" class="footer_link">Disclaimer</a>
+          <div class="footer-links">
+            <a href="./disclaimer.html" class="footer_link">Disclaimer</a>
+            <a href="https://x.com/ColBitcoin" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-twitter footer_icon"></i></a>
+            <a href="https://www.instagram.com/colbitcoins" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-instagram footer_icon"></i></a>
+            <a href="https://www.tiktok.com/@colbitcoin" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-tiktok footer_icon"></i></a>
+          </div>
         </div>
       </footer>
+  <script>
+    const quizData = [
+      {
+        q: '¿Cuántos Bitcoin existirán en total?',
+        options: ['100 millones', '21 millones', '1 billón', 'Sin límite'],
+        answer: 1
+      },
+      {
+        q: '¿Qué es un satoshi?',
+        options: ['Una criptomoneda alternativa', 'El creador de Bitcoin', 'La unidad mínima de Bitcoin (0.00000001 BTC)', 'Una wallet de Bitcoin'],
+        answer: 2
+      },
+      {
+        q: '¿Qué ocurre en el Halving de Bitcoin?',
+        options: ['Bitcoin se divide en dos monedas', 'La recompensa de minería se reduce a la mitad cada ~4 años', 'El precio siempre sube al doble', 'Se crean nuevos Bitcoin extras'],
+        answer: 1
+      },
+      {
+        q: '¿Qué es una wallet fría?',
+        options: ['Una app de Bitcoin en el celular', 'Una cuenta en un exchange', 'Un dispositivo físico que guarda Bitcoin sin conexión a internet', 'Una wallet con contraseña'],
+        answer: 2
+      },
+      {
+        q: '¿Qué es Lightning Network?',
+        options: ['Una nueva criptomoneda', 'Un exchange descentralizado', 'Un tipo de minería', 'Una capa sobre Bitcoin para pagos rápidos y baratos'],
+        answer: 3
+      }
+    ];
+
+    let quizCurrent = 0;
+    let quizScore = 0;
+    let quizAnswered = false;
+
+    function quizRender() {
+      const q = quizData[quizCurrent];
+      document.getElementById('quiz-counter').textContent = `Pregunta ${quizCurrent + 1} de ${quizData.length}`;
+      document.getElementById('quiz-question').textContent = q.q;
+      document.getElementById('quiz-progress').style.width = `${((quizCurrent) / quizData.length) * 100}%`;
+      quizAnswered = false;
+
+      const opts = document.getElementById('quiz-options');
+      opts.innerHTML = '';
+      q.options.forEach((opt, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-option';
+        btn.textContent = opt;
+        btn.addEventListener('click', () => quizAnswer(i, btn));
+        opts.appendChild(btn);
+      });
+    }
+
+    function quizAnswer(index, btn) {
+      if (quizAnswered) return;
+      quizAnswered = true;
+      const correct = quizData[quizCurrent].answer;
+      const allBtns = document.querySelectorAll('.quiz-option');
+
+      allBtns[correct].classList.add('correct');
+      if (index !== correct) {
+        btn.classList.add('wrong');
+      } else {
+        quizScore++;
+      }
+
+      setTimeout(() => {
+        quizCurrent++;
+        if (quizCurrent < quizData.length) {
+          quizRender();
+        } else {
+          quizShowResult();
+        }
+      }, 900);
+    }
+
+    function quizShowResult() {
+      document.getElementById('quiz-card').style.display = 'none';
+      const result = document.getElementById('quiz-result');
+      result.style.display = 'flex';
+      document.getElementById('quiz-result-score').textContent = `${quizScore} / ${quizData.length}`;
+
+      const msgs = [
+        'Apenas estás comenzando. ¡Perfecta razón para una sesión!',
+        'Tienes algo de base, pero hay mucho por aprender.',
+        'Nivel intermedio. Podemos llevarte al siguiente nivel.',
+        'Muy bien! Con una sesión llegas al nivel experto.',
+        '¡Excelente! Eres un conocedor de Bitcoin.'
+      ];
+      document.getElementById('quiz-result-text').textContent = msgs[quizScore];
+    }
+
+    document.getElementById('quiz-retry').addEventListener('click', () => {
+      quizCurrent = 0;
+      quizScore = 0;
+      document.getElementById('quiz-card').style.display = 'block';
+      document.getElementById('quiz-result').style.display = 'none';
+      quizRender();
+    });
+
+    quizRender();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mainNav.classList.toggle('nav--open');
+    });
+
+    mainNav.querySelectorAll('.nav_link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mainNav.classList.remove('nav--open');
+      });
+    });
+
+    let btcUSD = 0;
+    let btcCOP = 0;
+
+    async function fetchBtcPrice() {
+      try {
+        const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd,cop');
+        const data = await res.json();
+        btcUSD = data.bitcoin.usd;
+        btcCOP = data.bitcoin.cop;
+        document.getElementById('btc-price').textContent =
+          '$' + btcUSD.toLocaleString('en-US') + ' USD';
+        document.getElementById('btc-price-cop').textContent =
+          '$' + btcCOP.toLocaleString('es-CO') + ' COP';
+      } catch {
+        document.getElementById('btc-price').textContent = 'N/A';
+        document.getElementById('btc-price-cop').textContent = 'N/A';
+      }
+    }
+
+    function calcFromCOP() {
+      const amount = parseFloat(document.getElementById('calc-cop').value) || 0;
+      if (!btcCOP) return;
+      const sats = Math.round((amount / btcCOP) * 100_000_000);
+      document.getElementById('calc-sats').textContent = sats.toLocaleString('es-CO');
+      if (amount > 0 && btcUSD > 0) {
+        document.getElementById('calc-usd').value = (amount / (btcCOP / btcUSD)).toFixed(2);
+      }
+    }
+
+    function calcFromUSD() {
+      const amount = parseFloat(document.getElementById('calc-usd').value) || 0;
+      if (!btcUSD) return;
+      const sats = Math.round((amount / btcUSD) * 100_000_000);
+      document.getElementById('calc-sats').textContent = sats.toLocaleString('es-CO');
+      if (amount > 0 && btcCOP > 0) {
+        document.getElementById('calc-cop').value = Math.round(amount * (btcCOP / btcUSD));
+      }
+    }
+
+    document.getElementById('calc-cop').addEventListener('input', calcFromCOP);
+    document.getElementById('calc-usd').addEventListener('input', calcFromUSD);
+
+    fetchBtcPrice();
+    setInterval(fetchBtcPrice, 60000);
+  </script>
 </body>
 </html>
