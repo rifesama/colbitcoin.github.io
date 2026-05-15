@@ -82,7 +82,9 @@
               <li class='nav_item'><a target="_blank" href="https://blog.colbitcoin.com" class="nav_link">BLOG</a></li>
               <li class='nav_item'><a target="_blank" href="https://t.me/ColombiaP2P" class="nav_link">COMUNIDAD</a></li>
               <li class='nav_item'><a target="_blank" href="https://t.me/ColBitcoin" class="nav_link">TELEGRAM</a></li>
-              <li class='nav_item'><a target="_blank" href="https://www.youtube.com/@colbitcoin" class="nav_link">YOUTUBE</a></li>
+              <li class='nav_item'><a href="./resources.html" class="nav_link">RECURSOS</a></li>
+              <li class='nav_item'><a href="#dca" class="nav_link">DCA</a></li>
+              <li class='nav_item'><a href="#eventos" class="nav_link">EVENTOS</a></li>
             </ul>
           </nav>
 
@@ -99,6 +101,12 @@
           </button>
         </header>
 
+        <div class="social-bar">
+          <a href="https://x.com/ColBitcoin" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-twitter footer_icon"></i></a>
+          <a href="https://www.tiktok.com/@colbitcoin" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-tiktok footer_icon"></i></a>
+          <a href="https://www.instagram.com/colbitcoins" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-instagram footer_icon"></i></a>
+          <a href="https://www.youtube.com/@colbitcoin" target="_blank" rel="noopener noreferrer" class="footer_link"><i class="fa-brands fa-youtube footer_icon"></i></a>
+        </div>
 
         <main>
             <div class="hero">
@@ -138,6 +146,56 @@
               </div>
             </div>
 
+            <section id="dca" class="dca-section fade-up">
+              <span class="how-label">● ESTRATEGIA INTELIGENTE</span>
+              <h2 class="how-title">Calculadora DCA Bitcoin</h2>
+              <p class="dca-subtitle">Descubre cuántos sats habrías acumulado comprando Bitcoin todos los días desde una fecha específica.</p>
+
+              <div class="dca-card">
+                <div class="dca-inputs">
+                  <div class="dca-field">
+                    <label for="dca-amount">Monto diario (COP)</label>
+                    <input type="number" id="dca-amount" placeholder="Ej: 5000" min="1">
+                  </div>
+                  <div class="dca-field">
+                    <label for="dca-start">Fecha de inicio</label>
+                    <input type="date" id="dca-start">
+                  </div>
+                  <button id="dca-btn" class="dca-btn">Calcular</button>
+                </div>
+                <p class="dca-limit-note">📅 Historial disponible desde agosto 2017 (Binance BTCUSDT)</p>
+
+                <div id="dca-loading" class="dca-loading" hidden>
+                  <div class="dca-spinner"></div>
+                  <p>Consultando precios históricos...</p>
+                </div>
+
+                <div id="dca-error" class="dca-error" hidden></div>
+
+                <div id="dca-results" class="dca-results" hidden>
+                  <div class="dca-results-grid">
+                    <div class="dca-result-card">
+                      <span class="dca-result-label">⚡ Total Sats</span>
+                      <span class="dca-result-value" id="res-sats"></span>
+                    </div>
+                    <div class="dca-result-card">
+                      <span class="dca-result-label">💰 Valor actual (COP)</span>
+                      <span class="dca-result-value" id="res-value"></span>
+                    </div>
+                    <div class="dca-result-card">
+                      <span class="dca-result-label">📥 Total invertido (COP)</span>
+                      <span class="dca-result-value" id="res-invested"></span>
+                    </div>
+                    <div class="dca-result-card">
+                      <span class="dca-result-label">📈 Ganancia / Pérdida</span>
+                      <span class="dca-result-value" id="res-gain"></span>
+                    </div>
+                  </div>
+                  <p class="dca-disclaimer">* Precios históricos BTC/USD vía CoinCap · conversión con tasa USD/COP actual. No es asesoría financiera.</p>
+                </div>
+              </div>
+            </section>
+
             <div class="calc-section fade-up">
               <p class="how-label">CALCULADORA</p>
               <h2 class="how-title">¿Cuántos satoshis tienes?</h2>
@@ -165,48 +223,29 @@
               </div>
             </div>
 
-            <div class="box-container fade-up">
-              <a href="https://blog.colbitcoin.com" class="box">
-                <img src="./img/sombrero.png" alt="">
-                <h3>¿Cómo funciona?</h3>
-              </a>
-              <a href="./resources.html" class="box">
-                <img src="./img/resources.png" alt="">
-                <h3>Recursos</h3>
-              </a>
-            </div>
+            <div id="eventos" class="eventos-section fade-up">
+              <p class="how-label">● PRÓXIMOS EVENTOS</p>
+              <h2 class="how-title">Eventos Bitcoin en Colombia</h2>
 
-            <div class="how-it-works fade-up">
-              <p class="how-label">CÓMO FUNCIONA</p>
-              <h2 class="how-title">Tu camino en Bitcoin</h2>
-              <div class="how-steps">
-                <div class="how-step">
-                  <div class="how-number">1</div>
-                  <div class="how-text">
-                    <strong>Escríbeme por WhatsApp</strong>
-                    <span>Hablamos 20 minutos para entender tu nivel y tus objetivos con Bitcoin.</span>
-                  </div>
-                </div>
-                <div class="how-step">
-                  <div class="how-number">2</div>
-                  <div class="how-text">
-                    <strong>Recibe tu plan personalizado</strong>
-                    <span>Diseño una hoja de ruta específica para ti: qué aprender, qué hacer y en qué orden.</span>
-                  </div>
-                </div>
-                <div class="how-step">
-                  <div class="how-number">3</div>
-                  <div class="how-text">
-                    <strong>Sesiones de asesoría</strong>
-                    <span>Trabajamos juntos por videollamada a tu ritmo, con ejercicios prácticos incluidos.</span>
-                  </div>
-                </div>
-                <div class="how-step">
-                  <div class="how-number">4</div>
-                  <div class="how-text">
-                    <strong>Aplicas con seguridad</strong>
-                    <span>Compras, guardas y gestionas tus Bitcoin con criterio propio. Sin depender de nadie.</span>
-                  </div>
+              <div class="evento-card">
+                <img
+                  class="evento-img"
+                  src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/07/fe0f232c-d922-490a-93d6-babfae3420b1.png"
+                  alt="Autocustodia en Bitcoin"
+                >
+                <div class="evento-info">
+                  <p class="evento-tag">📅 Miércoles 20 de Mayo · 7:00 PM · Virtual por Google Meet</p>
+                  <h3 class="evento-title">Autocustodia en Bitcoin</h3>
+                  <p class="evento-desc">Una sesión educativa e instructiva para aprender a custodiar tus propios Bitcoin, desde cero hasta con experiencia previa. Organizado por ColBitcoin.</p>
+                  <a
+                    href="https://luma.com/event/evt-6fPeRXp9dmBudLX"
+                    class="luma-checkout--button evento-btn"
+                    data-luma-action="checkout"
+                    data-luma-event-id="evt-6fPeRXp9dmBudLX"
+                  >
+                    Inscribirse al evento
+                  </a>
+                  <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
                 </div>
               </div>
             </div>
@@ -611,6 +650,121 @@
 
     fetchBtcPrice();
     setInterval(fetchBtcPrice, 60000);
+
+    // ── Calculadora DCA ──────────────────────────────────────────────
+    (function () {
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
+      const maxDate = yesterday.toISOString().split('T')[0];
+
+      document.getElementById('dca-start').setAttribute('max', maxDate);
+      document.getElementById('dca-start').setAttribute('min', '2017-08-17');
+
+      function show(id) { document.getElementById(id).removeAttribute('hidden'); }
+      function hide(id) { document.getElementById(id).setAttribute('hidden', ''); }
+
+      document.getElementById('dca-btn').addEventListener('click', async () => {
+        const amountStr = document.getElementById('dca-amount').value.trim();
+        const dateStr   = document.getElementById('dca-start').value;
+
+        // Validaciones
+        const amount = parseFloat(amountStr);
+        if (!amount || amount < 1) {
+          showError('Ingresa un monto diario válido (mínimo $1 COP).');
+          return;
+        }
+        if (!dateStr) {
+          showError('Selecciona una fecha de inicio.');
+          return;
+        }
+        const startDate = new Date(dateStr + 'T00:00:00');
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        if (startDate >= today) {
+          showError('La fecha de inicio debe ser anterior a hoy.');
+          return;
+        }
+
+        hide('dca-error');
+        hide('dca-results');
+        show('dca-loading');
+        document.getElementById('dca-btn').disabled = true;
+
+        try {
+          const result = await runDCA(amount, startDate);
+          renderResults(result);
+        } catch (e) {
+          console.error('DCA error:', e);
+          showError('Error: ' + e.message);
+        } finally {
+          hide('dca-loading');
+          document.getElementById('dca-btn').disabled = false;
+        }
+      });
+
+      async function runDCA(amountCOP, startDate) {
+        if (!btcCOP || !btcUSD) {
+          throw new Error('Precio actual aún no disponible. Espera unos segundos y vuelve a intentarlo.');
+        }
+        const usdToCop = btcCOP / btcUSD;
+
+        // Binance public API: free, no key, Access-Control-Allow-Origin:* (works from any origin).
+        // BTCUSDT daily klines, up to 1000 per request → paginate for long ranges.
+        // Kline format: [openTime, open, high, low, close, ...]
+        const now      = new Date();
+        const todayUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+        const allCandles = [];
+        let curStart = startDate.getTime();
+
+        while (curStart < todayUTC) {
+          const url = `https://api.binance.com/api/v3/klines`
+                    + `?symbol=BTCUSDT&interval=1d`
+                    + `&startTime=${curStart}&endTime=${todayUTC - 1}&limit=1000`;
+          const res = await fetch(url);
+          if (!res.ok) throw new Error(`Binance API error ${res.status}`);
+          const batch = await res.json();
+          if (!batch.length) break;
+          for (const c of batch) allCandles.push(c);
+          curStart = batch[batch.length - 1][0] + 86_400_000;
+        }
+
+        if (!allCandles.length) throw new Error('Sin datos de precio para ese rango de fechas.');
+
+        let totalSats = 0;
+        for (const c of allCandles) {
+          const closeUSD = parseFloat(c[4]);
+          totalSats += (amountCOP / (closeUSD * usdToCop)) * 100_000_000;
+        }
+
+        const totalInvested = amountCOP * allCandles.length;
+        const currentValue  = (totalSats / 100_000_000) * btcCOP;
+        const gainPct       = ((currentValue - totalInvested) / totalInvested) * 100;
+
+        return { totalSats, totalInvested, currentValue, gainPct, days: allCandles.length };
+      }
+
+      function renderResults({ totalSats, totalInvested, currentValue, gainPct, days }) {
+        const fmt = (n) => Math.round(n).toLocaleString('es-CO');
+        document.getElementById('res-sats').textContent     = fmt(totalSats) + ' sats';
+        document.getElementById('res-value').textContent    = '$ ' + fmt(currentValue);
+        document.getElementById('res-invested').textContent = '$ ' + fmt(totalInvested);
+
+        const gainEl = document.getElementById('res-gain');
+        const sign   = gainPct >= 0 ? '+' : '';
+        gainEl.textContent  = sign + gainPct.toFixed(1) + '%';
+        gainEl.className    = 'dca-result-value ' + (gainPct >= 0 ? 'positive' : 'negative');
+
+        show('dca-results');
+      }
+
+      function showError(msg) {
+        hide('dca-loading');
+        hide('dca-results');
+        const el = document.getElementById('dca-error');
+        el.textContent = msg;
+        show('dca-error');
+      }
+    })();
   </script>
 </body>
 </html>
