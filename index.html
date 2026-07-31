@@ -230,18 +230,18 @@
               <div class="evento-card">
                 <img
                   class="evento-img"
-                  src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/07/fe0f232c-d922-490a-93d6-babfae3420b1.png"
-                  alt="Autocustodia en Bitcoin"
+                  src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/uploads/h6/dc1ef476-a625-4f60-8571-eec6c7854430.png"
+                  alt="Aprende a comprar Bitcoin en P2P"
                 >
                 <div class="evento-info">
-                  <p class="evento-tag">📅 Miércoles 20 de Mayo · 7:00 PM · Virtual por Google Meet</p>
-                  <h3 class="evento-title">Autocustodia en Bitcoin</h3>
-                  <p class="evento-desc">Una sesión educativa e instructiva para aprender a custodiar tus propios Bitcoin, desde cero hasta con experiencia previa. Organizado por ColBitcoin.</p>
+                  <p class="evento-tag">📅 Primer miércoles de cada mes · Virtual por Google Meet</p>
+                  <h3 class="evento-title">Aprende a comprar Bitcoin en P2P</h3>
+                  <p class="evento-desc">Charla introductoria sobre cómo comprar Bitcoin en transacciones peer-to-peer. Sin conocimiento técnico previo necesario: preguntas simples y respuestas claras. Organizado por ColomBiaP2P.</p>
                   <a
-                    href="https://luma.com/event/evt-6fPeRXp9dmBudLX"
+                    href="https://luma.com/krffaedr"
                     class="luma-checkout--button evento-btn"
                     data-luma-action="checkout"
-                    data-luma-event-id="evt-6fPeRXp9dmBudLX"
+                    data-luma-event-id="krffaedr"
                   >
                     Inscribirse al evento
                   </a>
@@ -611,10 +611,14 @@
 
     async function fetchBtcPrice() {
       try {
-        const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd,cop');
-        const data = await res.json();
-        btcUSD = data.bitcoin.usd;
-        btcCOP = data.bitcoin.cop;
+        const [btcRes, fxRes] = await Promise.all([
+          fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT'),
+          fetch('https://open.er-api.com/v6/latest/USD'),
+        ]);
+        const btcData = await btcRes.json();
+        const fxData  = await fxRes.json();
+        btcUSD = parseFloat(btcData.price);
+        btcCOP = Math.round(btcUSD * fxData.rates.COP);
         document.getElementById('btc-price').textContent =
           '$' + btcUSD.toLocaleString('en-US') + ' USD';
         document.getElementById('btc-price-cop').textContent =
